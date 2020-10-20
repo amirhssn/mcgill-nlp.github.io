@@ -6,12 +6,12 @@
   border-bottom: 3px solid $primary;
   @include sans-serif-font;
   .navbar-brand {
-    font-weight: 800;
+    font-weight: 700;
     color: $gray-800;
   }
   .navbar-toggler {
     font-size: 12px;
-    font-weight: 800;
+    font-weight: 700;
     padding: 13px;
     text-transform: uppercase;
     color: $gray-800;
@@ -20,7 +20,7 @@
     > li.nav-item {
       > a {
         font-size: 12px;
-        font-weight: 800;
+        font-weight: 700;
         letter-spacing: 1px;
         text-transform: uppercase;
       }
@@ -110,11 +110,11 @@
   background-color: white;
   @include sans-serif-font;
   .navbar-brand {
-    font-weight: 800;
+    font-weight: 700;
   }
   .navbar-toggler {
     font-size: 12px;
-    font-weight: 800;
+    font-weight: 700;
     padding: 13px;
     text-transform: uppercase;
   }
@@ -123,7 +123,7 @@
       > a {
         color: $gray-900;
         font-size: 12px;
-        font-weight: 800;
+        font-weight: 700;
         letter-spacing: 1px;
         text-transform: uppercase;
         &:focus,
