@@ -1,16 +1,6 @@
-// Global styling for this template
 body {
-  font-size: 20px;
   color: $gray-900;
-  @include serif-font;
-}
-
-p {
-  line-height: 1.5;
-  margin: 30px 0;
-  a {
-    text-decoration: underline;
-  }
+  @include sans-serif-font;
 }
 
 h1,
@@ -20,7 +10,7 @@ h4,
 h5,
 h6 {
   font-weight: 800;
-  @include sans-serif-font;
+  @include serif-font;
 }
 
 a {
