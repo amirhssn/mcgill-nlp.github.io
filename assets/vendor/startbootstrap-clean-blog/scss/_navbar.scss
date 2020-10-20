@@ -3,6 +3,7 @@
   position: absolute;
   border-bottom: 1px solid $gray-200;
   background-color: white;
+  border-bottom: 3px solid $primary;
   @include sans-serif-font;
   .navbar-brand {
     font-weight: 800;
@@ -95,6 +96,70 @@
       -ms-transform: translate3d(0, 100%, 0);
       -o-transform: translate3d(0, 100%, 0);
       transform: translate3d(0, 100%, 0);
+
+      top: -69px;
+      border-bottom: 3px solid $primary;  
     }
+  }
+
+  
+}
+
+#mainNavNoHeader {
+  border-bottom: 3px solid $primary;
+  background-color: white;
+  @include sans-serif-font;
+  .navbar-brand {
+    font-weight: 800;
+  }
+  .navbar-toggler {
+    font-size: 12px;
+    font-weight: 800;
+    padding: 13px;
+    text-transform: uppercase;
+  }
+  .navbar-nav {
+    > li.nav-item {
+      > a {
+        color: $gray-900;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        &:focus,
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    .navbar-brand {
+      padding: 10px 20px;
+    }
+    .navbar-nav {
+      > li.nav-item {
+        > a {
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+}
+
+.navbar-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+
+  @media only screen and (min-width: 576px) {
+    width: 95%;
+  }
+
+  @media only screen and (min-width: 768px) {
+    width: 87%;
   }
 }
