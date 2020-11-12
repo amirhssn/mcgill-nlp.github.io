@@ -33,6 +33,9 @@ footer {
 
     a {
       color: $gray-200;
+      &:hover{
+        color: $mcgill-red;
+      }
     }
   }
 }

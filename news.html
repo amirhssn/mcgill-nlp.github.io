@@ -1,0 +1,16 @@
+---
+layout: page-no-header
+title: News
+permalink: /news/
+---
+
+<div class="news-box">
+    <ul>
+        {% assign all_news = site.news | sort: 'date' | reverse %}
+        {% for n in all_news %}
+            <li class="news-li">
+                <span style="font-weight: bold;">{{n.date | date: "%b %-d, %Y" }}:</span> &nbsp;{{n.content}}
+            </li>
+        {% endfor %}
+    </ul>
+</div>

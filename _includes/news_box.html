@@ -1,0 +1,19 @@
+{% assign all_news = site.news | sort: 'date' | reverse | limit: 10 %}
+{% assign num_news = all_news | size %}
+{% if num_news > 0 %}
+    <h3>News</h3>
+    <div class="news-box">
+        <ul>
+            {% for n in all_news %}
+                <li class="news-li">
+                    <span style="font-weight: bold;">{{n.date | date: "%b %-d, %Y" }}:</span> &nbsp;{{n.content}}
+                </li>
+            {% endfor %}
+            
+            {% if num_news > 10 %}
+                <div style="height: 0.5rem;"></div>
+                <a href="{{ '/news/' | relative }}">View all</a>
+            {% endif %}
+        </ul>
+    </div>
+{% endif %}
