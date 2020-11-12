@@ -1,0 +1,18 @@
+items:
+- url: /
+  name: Home
+
+- url: /people/
+  name: People
+
+- url: /publications/
+  name: Publications
+
+- url: /projects/
+  name: Projects
+
+- url: /resources/
+  name: Resources
+
+- url: /contact/
+  name: Contact
