@@ -98,6 +98,7 @@ You should put the images in `img/people/`
 ### Publications page
 To add a new publication, create a `.md` file under the `_publications` directory. Follow the below format:
 ```markdown
+---
 title: The paper title should be here
 authors: Author 1, Author 2, Author 3, Author 4, and Author 5     
 year: 2020
@@ -130,6 +131,7 @@ links:
       name: BIB
     - url: https://other.com
       name: some other link
+---
 ```
 
 ### Projects page
