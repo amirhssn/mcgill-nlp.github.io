@@ -1,0 +1,58 @@
+.people-avatar {
+    float: left;
+    margin-right: 0.5rem;
+    height: 100%;
+
+    img {
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center right;
+        padding: 1rem;
+        margin-top: 0.4rem;
+    }
+}
+
+.people-desc {
+    padding-top: 1rem;
+}
+
+.people-desc-key {
+    color: $gray-600;
+    font-weight: bold;
+}
+
+.people-desc-value {
+    color: $gray-600;
+}
+
+.people-desc-item {
+    line-height: 1.15rem;
+    font-size: 0.8rem;
+}
+
+.people-desc-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    a {
+        color: $mcgill-red;
+    }
+    a:hover {
+        color: darken($color: $mcgill-red, $amount: 20%);
+    }
+}
+
+.people-alumni-name {
+    font-weight: bold;
+    a {
+        color: $mcgill-red;
+    }
+    a:hover {
+        color: darken($color: $mcgill-red, $amount: 20%);
+    }
+}
+
+.people-profile {
+    margin-bottom: 1rem;
+}

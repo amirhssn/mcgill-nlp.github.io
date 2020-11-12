@@ -1,0 +1,13 @@
+{% if include.people %}
+  {% assign fsize = include.people | size %}
+  {% if fsize > 0 %}
+  <h3>{{ include.section_name }}</h3>
+  <div class="row">
+    {% assign people = include.people | sort: 'name' %}
+    {% for p in people %}
+      {% include people-profile.html person=p %}
+    {% endfor %}
+  </div>
+  <br/>
+  {% endif %}
+{% endif %}

@@ -1,0 +1,33 @@
+---
+layout: page-no-header
+---
+{{ content }}
+
+{% include people-section.html people=site.data.people.faculty section_name='Faculty' %}
+{% include people-section.html people=site.data.people.postdoc section_name='Postdocs' %}
+{% include people-section.html people=site.data.people.phd section_name='Ph.D. Students' %}
+{% include people-section.html people=site.data.people.msc section_name='Masters Students' %}
+{% include people-section.html people=site.data.people.undergrad section_name='Undergraduate Students/Interns' %}
+
+{% if site.data.people.alumni %}
+  {% assign asize = site.data.people.alumni | size %}
+  {% if asize > 0 %}
+  <h3>Alumni</h3>
+  <ul>
+  {% for a in site.data.people.alumni %}
+    <li style="font-size: 0.9rem;">
+      <span class="people-alumni-name">
+        {% if a.url %}
+            <a href="{{ a.url }}">{{ a.name }}</a>,
+        {% else %}
+            {{ a.name }},
+        {% endif %}
+      </span>
+      {{ a.last_position }} {{ a.leave_year }}{% if a.current_position %}, <span style="font-style: italic;">Currently {{ a.current_position }}</span>
+      {% endif %}
+
+    </li>
+  {% endfor %}
+  </ul>
+  {% endif %}
+{% endif %}

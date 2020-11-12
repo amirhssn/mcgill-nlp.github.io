@@ -1,0 +1,38 @@
+<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 people-profile" style="display: inline-block;">
+    <div class="people-avatar">
+        {% if include.person.avatar %}
+            <img src="{{ include.person.avatar | relative_url}}">
+        {% endif %}
+    </div>
+    <div class="people-desc">
+      <div class="people-desc-name">
+        {% if include.person.url %}
+            <a href="{{ include.person.url }}">{{ include.person.name }}</a>
+        {% else %}
+            {{ include.person.name }}
+        {% endif %}
+      </div>
+      <div class="people-desc-item" style="margin-bottom: 0.2rem;">
+        <span>{{ include.person.affiliation }}</span>
+      </div>
+      {% if include.person.co_supervisor %}
+        <div class="people-desc-item">
+            <span class="people-desc-key">Co-Supevisor:</span>
+            <span class="people-desc-value">{{ include.person.co_supervisor }}</span>
+        </div>
+      {% endif %}
+
+      {% if include.person.research_areas %}
+        <div class="people-desc-item">
+            <span class="people-desc-key">Research Areas:</span>
+            <span class="people-desc-value">{{ include.person.research_areas }}</span>
+        </div>
+      {% endif %}
+
+      {% if include.person.desc %}
+        <div class="people-desc-item">
+            <span class="people-desc-value">{{ include.person.desc }}</span>
+        </div>
+      {% endif %}
+    </div>
+  </div>
