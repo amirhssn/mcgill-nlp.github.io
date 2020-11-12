@@ -1,0 +1,9 @@
+---
+layout: page-no-header
+---
+
+{{ content }}
+
+{% for p in site.projects %}
+    {% include project.html project=p %}
+{% endfor %}

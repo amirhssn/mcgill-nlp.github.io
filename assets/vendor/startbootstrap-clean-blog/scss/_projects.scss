@@ -1,0 +1,25 @@
+
+.project-img {
+    img {
+        width: 100%;
+        border: 2px solid $gray-500;
+        padding: 2rem;
+        margin-bottom: 2rem;
+
+        @media only screen and (min-width: 992px) {
+            padding: 0 0.3rem 0.3rem 0;
+            border-top: none;
+            border-left: none;
+            margin-top: 0.4rem;
+        }
+    }
+}
+
+.project-key-people {
+    font-size: 0.9rem;
+    
+    color: $gray-600;
+    margin-top: -0.3rem;
+    margin-bottom: 0.5rem;
+    @include serif-font;
+}
