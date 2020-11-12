@@ -4,9 +4,11 @@
     </div>
     <div class="col-sm-12 col-md-12 col-lg-8 colg-xl-8">
         <h4>{{ include.project.title }}</h4>
-        <div class="project-key-people"><strong>Key people:</strong> {{ include.project.key_people }}</div>
-        {{ include.project.content }}
+        {% if include.project.key_people %}
+            <div class="project-key-people"><strong>Key people:</strong> {{ include.project.key_people }}</div>
+        {% endif %}
 
+        {{ include.project.content }}
         
         {% assign pubs = site.publications | where: 'project_id', include.project.id | sort: 'date' | reverse %}
         {% assign pubs_size = pubs | size %}
