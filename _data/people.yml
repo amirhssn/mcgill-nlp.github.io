@@ -1,0 +1,69 @@
+# faculty:
+#   - name: John Smith
+#     affiliation: Computer Science & Linguistics
+#     avatar: img/people/john.jpg
+#     url: https://john-smith.com (optional)
+#     research_areas: Area #1, Area #2, and Area #3 (optional)
+#     desc: some desc (optional)
+  
+#   - name
+#     ...
+
+# postdoc:
+#   - name: John Smith
+#     affiliation: Computer Science & Linguistics
+#     avatar: img/people/john.jpg
+#     url: https://john-smith.com (optional)
+#     research_areas: Area #1, Area #2, and Area #3 (optional)
+#     co_supervisor: John Smith 2 (optional)
+#     desc: some desc (optional)
+  
+#   - name
+#     ...
+
+# phd:
+#   - name: John Smith
+#     affiliation: Computer Science & Linguistics
+#     avatar: img/people/john.jpg
+#     url: https://john-smith.com (optional)
+#     research_areas: Area #1, Area #2, and Area #3 (optional)
+#     co_supervisor: John Smith 2 (optional)
+#     desc: some desc (optional)
+  
+#   - name
+#     ...
+
+# msc:
+#   - name: John Smith
+#     affiliation: Computer Science & Linguistics
+#     avatar: img/people/john.jpg
+#     url: https://john-smith.com (optional)
+#     research_areas: Area #1, Area #2, and Area #3 (optional)
+#     co_supervisor: John Smith 2 (optional)
+#     desc: some desc (optional)
+  
+#   - name
+#     ...
+
+
+# undergrad:
+#   - name: John Smith
+#     affiliation: Computer Science & Linguistics
+#     avatar: img/people/john.jpg
+#     url: https://john-smith.com (optional)
+#     research_areas: Area #1, Area #2, and Area #3 (optional)
+#     co_supervisor: John Smith 2 (optional)
+#     desc: some desc (optional)
+  
+#   - name:
+#     ...
+
+# alumni:
+#   - name: John Smith
+#     last_position: MSc
+#     leave_year: 2020
+#     current_position: Ph.D. at Mila (optional)
+#     url: https://john-smith.com (optional)
+
+#   - name:
+#     ...
