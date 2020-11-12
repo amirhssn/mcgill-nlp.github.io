@@ -1,0 +1,14 @@
+---
+layout: page-no-header
+---
+{{ content }}
+
+{% assign years = site.publications | map: 'year' | uniq | sort | reverse %}
+{% for y in years %}
+    <h4 class="pubs-year">{{ y }}</h4>
+    {% assign this_year_pubs = site.publications | where: 'year', y | sort: 'date' | reverse %}
+    {% for p in this_year_pubs %}
+        {% include pub.html pub=p %}
+    {% endfor %}
+    <br/>
+{% endfor %}

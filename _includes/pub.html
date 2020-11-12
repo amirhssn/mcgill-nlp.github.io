@@ -1,0 +1,49 @@
+<div class="pub
+    {% if include.no_pad %}
+        pub-no-pad
+    {% endif %}
+    "
+>
+    <div class="pub-title">
+        {{ include.pub.title }}
+        {% if include.year %}
+            [{{include.year}}]
+        {% endif %}
+    </div>
+    <div class="pub-authors">{{ include.pub.authors }}</div>
+    <div class="pub-venue">
+        {{ include.pub.venue }}
+        {% if include.pub.other_desc %}
+            &nbsp;&nbsp;{{ include.pub.other_desc }}
+        {% endif %}
+        {% if include.pub.red_note %}
+            &nbsp;&nbsp;<span style="color: #9E0918;">{{ include.pub.red_note }}</span>
+        {% endif %}
+    </div>
+    <div class="pub-links">
+        {% for link in include.pub.links %}
+            <a class="pub-link pub-link-{{ link.name | downcase | replace: ' ', '-' }}" 
+                title="{{ link.name }}" 
+                {% if link.url contains '://' %}
+                    href="{{ link.url }}"
+                {% else %}
+                    href="{{ link.url | prepend: site.baseurl }}"
+                {% endif %}>
+                <!-- {% if link.name == 'PDF' %}
+                    &nbsp;<i class="fas fa-file-pdf"></i>&nbsp;
+                {% elsif link.name == 'Source Code' %}
+                    &nbsp;<i class="fab fa-github-alt"></i>&nbsp;
+                {% elsif link.name == 'Project Page' %}
+                    &nbsp;<i class="fas fa-globe-americas"></i>&nbsp;
+                {% elsif link.name == 'Dataset' %}
+                    &nbsp;<i class="fas fa-database"></i>&nbsp;
+                {% elsif link.name == 'Demo' %}
+                    &nbsp;<i class="fas fa-cog"></i>&nbsp;
+                {% elsif link.name == 'BIB' %}
+                    &nbsp;<i class="fas fa-users"></i>&nbsp;
+                {% endif %} -->
+                {{ link.name }}
+            </a>
+        {% endfor %}
+    </div>
+</div>

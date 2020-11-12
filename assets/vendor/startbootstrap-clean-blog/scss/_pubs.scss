@@ -1,0 +1,125 @@
+.pubs-year {
+  color: $mcgill-red !important;
+}
+
+.pub {
+    padding: 0.6rem 2rem;
+    padding-bottom: 0.8rem;
+
+    @media only screen and (max-width: 576px) {
+        padding: 0.6rem 0rem;
+    }
+}
+
+.pub-no-pad {
+    padding: 0;
+    padding-bottom: 0.8rem;
+
+    @media only screen and (max-width: 576px) {
+        padding: 0.6rem 0rem;
+    }
+}
+
+.pub-authors {
+    font-weight: normal;
+    color: $gray-600;
+    font-size: 0.9rem;
+}
+
+.pub-title {
+    font-weight: bold;
+    font-size: 1.05rem;
+}
+
+.pub-venue {
+    font-size: 0.9rem;
+}
+
+.pub-links{
+    display: inline-block;
+    margin-top: 0.2rem;
+}
+
+.pub-link {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .2rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border: 1px solid #0096C9;
+    margin-right: 0.6rem;
+    
+    $the-color: #0096C9;
+    color: $the-color;
+    &:hover {
+        text-decoration: none !important;
+        background-color: $the-color;
+        color: $white;
+    }
+
+    margin-bottom: 0.1rem;
+}
+
+.pub-link-pdf .pub-link-source-code .pub-link-project-page .pub-link-dataset .pub-link-demo .pub-link-bib {
+    border-color: $mcgill-red;
+    color: $mcgill-red;
+    &:hover {
+        background-color: $mcgill-red;
+        color: $white;
+    }
+}
+
+// .pub-link-source-code {
+//     $the-color: #D3674A;
+//     border-color: $the-color;
+//     color: $the-color;
+//     &:hover {
+//         background-color: $the-color;
+//         color: $white;
+//     }
+// }
+
+// .pub-link-project-page {
+//     $the-color: #B28C35;
+//     border-color: $the-color;
+//     color: $the-color;
+//     &:hover {
+//         background-color: $the-color;
+//         color: $white;
+//     }
+// }
+
+// .pub-link-dataset {
+//     $the-color: #0096C9;
+//     border-color: $the-color;
+//     color: $the-color;
+//     &:hover {
+//         background-color: $the-color;
+//         color: $white;
+//     }
+// }
+
+// .pub-link-demo {
+//     $the-color: #8BA04E;
+//     border-color: $the-color;
+//     color: $the-color;
+//     &:hover {
+//         background-color: $the-color;
+//         color: $white;
+//     }
+// }
+
+// .pub-link-bib {
+//     $the-color: #9B5678;
+//     border-color: $the-color;
+//     color: $the-color;
+//     &:hover {
+//         background-color: $the-color;
+//         color: $white;
+//     }
+// }
