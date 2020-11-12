@@ -107,7 +107,7 @@
 
 #mainNavNoHeader {
   border-bottom: 3px solid $primary;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   @include sans-serif-font;
   .navbar-brand {
     font-weight: 700;
