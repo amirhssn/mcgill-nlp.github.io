@@ -1,6 +1,9 @@
 body {
   color: $gray-900;
   @include sans-serif-font;
+  height: 100%;
+  position: relative;
+
 }
 
 h1,
@@ -14,11 +17,12 @@ h6 {
 }
 
 a {
-  color: $gray-900;
+  // color: $gray-900;
   @include transition-all;
+  color: $primary;
   &:focus,
   &:hover {
-    color: $primary;
+    color: darken($color: $primary, $amount: 20%);
   }
 }
 
@@ -65,3 +69,11 @@ img::-moz-selection {
   color: $white;
   background: transparent;
 }
+
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 15rem;
+}
+
