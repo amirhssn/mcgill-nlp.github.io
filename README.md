@@ -2,125 +2,156 @@
 
 ## Installation & Setup
 
-### Using RubyGems
+1. Install Ruby
+2. Clone `git clone https://github.com/McGill-NLP/group-website.git && cd group-website`
+1. Install dependencies `bundle install`
+5. Serve the site: `bundle exec jekyll serve`
 
-When installing the theme using RubyGems, demo images, posts, and pages are not included. Follow the instructions below for complete setup.
+## Update contents
+### Home page
+Just open `index.html`, and start modifying it.
 
-1. (Optional) Create a new Jekyll site: `jekyll new my-site`
-2. Replace the current theme in your `Gemfile` with `gem "jekyll-theme-clean-blog"`.
-3. Install the theme (run the command inside your site directory): `bundle install`
-4. Replace the current theme in your `_config.yml` file with `theme: jekyll-theme-clean-blog`.
-5. Build your site: `bundle exec jekyll serve`
+### Add news
+Create a `.md` file under the `_news` directory. Here is the format
+```markdown
+---
+date: 2020-11-07T10:00:00+3:30
+---
+The news content is placed here, and it supports markdown formatting.
+```
 
-Assuming there are no errors and the site is building properly, follow these steps next:
+### People page
+Open `_data/people.yml`. This file should follow the this format:
+```yml
+faculty:
+  - name: John Smith
+    affiliation: Computer Science & Linguistics
+    avatar: img/people/john.jpg
+    url: https://john-smith.com (optional)
+    research_areas: Area #1, Area #2, and Area #3 (optional)
+    desc: some desc (optional)
+  
+  - name
+    ...
 
-1. Create the following pages if they do not exist already (or change the extension of existing markdown files from `.md` to `.html`):
+postdoc:
+  - name: John Smith
+    affiliation: Computer Science & Linguistics
+    avatar: img/people/john.jpg
+    url: https://john-smith.com (optional)
+    research_areas: Area #1, Area #2, and Area #3 (optional)
+    co_supervisor: John Smith 2 (optional)
+    desc: some desc (optional)
+  
+  - name
+    ...
 
-   * `index.html` - set to `layout: home`
-   * `about.html` - set to `layout: page`
-   * `contact.html` - set to `layout: page`
-   * `posts/index.html` - set to `layout: page` (you will also need to create a `posts` directory)
+phd:
+  - name: John Smith
+    affiliation: Computer Science & Linguistics
+    avatar: img/people/john.jpg
+    url: https://john-smith.com (optional)
+    research_areas: Area #1, Area #2, and Area #3 (optional)
+    co_supervisor: John Smith 2 (optional)
+    desc: some desc (optional)
+  
+  - name
+    ...
 
-2. Configure the `index.html` front matter. Example:
+msc:
+  - name: John Smith
+    affiliation: Computer Science & Linguistics
+    avatar: img/people/john.jpg
+    url: https://john-smith.com (optional)
+    research_areas: Area #1, Area #2, and Area #3 (optional)
+    co_supervisor: John Smith 2 (optional)
+    desc: some desc (optional)
+  
+  - name
+    ...
 
-    ```markdown
-    ---
-    layout: home
-    background: '/PATH_TO_IMAGE'
-    ---
-    ```
 
-3. Configure the `about.html`, `contact.html`, and `posts/index.html` front matter. Example:
+undergrad:
+  - name: John Smith
+    affiliation: Computer Science & Linguistics
+    avatar: img/people/john.jpg
+    url: https://john-smith.com (optional)
+    research_areas: Area #1, Area #2, and Area #3 (optional)
+    co_supervisor: John Smith 2 (optional)
+    desc: some desc (optional)
+  
+  - name:
+    ...
 
-    ```markdown
-    ---
-    layout: page
-    title: Page Title
-    description: This is the page description.
-    background: '/PATH_TO_IMAGE'
-    ---
-    ```
+alumni:
+  - name: John Smith
+    last_position: MSc
+    leave_year: 2020
+    current_position: Ph.D. at Mila (optional)
+    url: https://john-smith.com (optional)
 
-4. For each post in the `_posts` directory, update the front matter. Example:
+  - name:
+    ...
+```
+You should put the images in `img/people/`
 
-    ```markdown
-    ---
-    layout: post
-    title: "Post Title"
-    subtitle: "This is the post subtitle."
-    date: YYYY-MM-DD HH:MM:SS
-    background: '/PATH_TO_IMAGE'
-    ---
-    ```
+### Publications page
+To add a new publication, create a `.md` file under the `_publications` directory. Follow the below format:
+```markdown
+---
+title: The paper title should be here
+authors: Author 1, Author 2, Author 3, Author 4, and Author 5     
+year: 2020
+venue: EMNLP 2020
+sitemap: false
+date: 2020-11-07
 
-    For reference, look at the [demo repository](https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll) to see how the files are set up.
+// Optional
+other_desc: Other Descripion 
+red_note: "*Won the Best Paper Award" (optional)
 
-5. Add the form to the `contact.html` page. Add the following code to your `contact.html` page:
+// Optional
+// If you want to link this paper to a project, just add the following line. 
+// If the project filename is my_project.md, then the id is as follows:
+project_id: /projects/my_project
 
-    ```html
-    <form name="sentMessage" id="contactForm" novalidate>
-      <div class="control-group">
-        <div class="form-group floating-label-form-group controls">
-          <label>Name</label>
-          <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
-          <p class="help-block text-danger"></p>
-        </div>
-      </div>
-      <div class="control-group">
-        <div class="form-group floating-label-form-group controls">
-          <label>Email Address</label>
-          <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
-          <p class="help-block text-danger"></p>
-        </div>
-      </div>
-      <div class="control-group">
-        <div class="form-group col-xs-12 floating-label-form-group controls">
-          <label>Phone Number</label>
-          <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-          <p class="help-block text-danger"></p>
-        </div>
-      </div>
-      <div class="control-group">
-        <div class="form-group floating-label-form-group controls">
-          <label>Message</label>
-          <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-          <p class="help-block text-danger"></p>
-        </div>
-      </div>
-      <br>
-      <div id="success"></div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary" id="sendMessageButton">Send</button>
-      </div>
-    </form>
-    ```
+// (Optional)
+links: 
+    - url: https://path.to.pdf.com
+      name: PDF
+    - url: https://path.to.code.com
+      name: Source Code
+    - url: https://google.com
+      name: Project Page
+    - url: https://path.to.dataset.com
+      name: Dataset
+    - url: https://path.to.demo.com
+      name: Demo
+    - url: https://path.to.bibliography.com
+      name: BIB
+    - url: https://other.com
+      name: some other link
+---
+```
 
-    Make sure you have the `email` setting in your `_config.yml` file set to a working email address! Once this is set, fill out the form and then check your email, verify the email address using the link sent to you by Formspree, and then the form will be working!
+### Projects page
+Add a new `.md` file like this in the `_projects` directory:
+```markdown
+---
+title: Project Title
+img: /img/projects/project.img
 
-6. Build your site: `bundle exec jekyll serve`
+// Optional
+key_people: Person 1, Person 2, Person 3, and Person 4
+---
+The project description should be provided here. It supports **markdown**
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula sodales felis vel tincidunt. Praesent sagittis imperdiet nibh, nec varius metus malesuada sed. Quisque finibus venenatis justo a blandit. Sed placerat, dui sit amet aliquet iaculis, nisi mi interdum ex, non elementum eros tellus non libero. Maecenas at accumsan ligula. 
 
-### Using Core Files
+Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum vitae nulla nisi. Etiam imperdiet justo a facilisis molestie. In sit amet ipsum semper, tincidunt neque vitae, vulputate turpis. Nam vulputate interdum laoreet. Integer convallis efficitur nibh, vitae pellentesque felis.
+```
 
-When using the core files, the demo images, posts, and pages are all included with the download. After following the instructions below, you can then go and change the content of the pages and posts.
-
-1. [Download](https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll/archive/master.zip) or Clone the repository.
-2. Update the following configuration settings in your `_config.yml` file:
-   - `baseurl`
-   - `url`
-   - `title`
-   - `email` (after setting this setting to a working email address, fill out the form on the contact page and send it - then check your email and verify the address and the form will send you messages when used)
-   - `description`
-   - `author`
-   - `twitter_username` (Optional)
-   - `facebook_username` (Optional)
-   - `github_username` (Optional)
-   - `linkedin_username` (Optional)
-   - `instagram_username` (Optional)
-3. Build your site: `bundle exec jekyll serve`
-
-## Bugs and Issues
-
-Have a bug or an issue with this template? [Open a new issue](https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll/issues) here on GitHub!
+### Resources page
+Update `resources.md`. It doesn't have any specific format.
 
 ## About
 
