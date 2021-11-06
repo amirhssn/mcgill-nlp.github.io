@@ -1,9 +1,11 @@
-{% if include.people %}
-  {% assign fsize = include.people | size %}
+{% if include.role %}
+  {% assign list = site.data.people.profiles | where: "role", include.role %}
+  {% assign list = list | where: "active", "true"%}
+  {% assign fsize = list | size %}
   {% if fsize > 0 %}
   <h3>{{ include.section_name }}</h3>
   <div class="row">
-    {% assign people = include.people | sort: 'name' %}
+    {% assign people = list | sort: 'enterance_year' %}
     {% for p in people %}
       {% include people-profile.html person=p %}
     {% endfor %}

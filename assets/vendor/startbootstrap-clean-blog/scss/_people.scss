@@ -33,13 +33,13 @@
 }
 
 .people-desc-name {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
     a {
-        color: $mcgill-red;
+        color: darken($color: $mcgill-red, $amount: 10%);
     }
     a:hover {
-        color: darken($color: $mcgill-red, $amount: 20%);
+        color: darken($color: $mcgill-red, $amount: 25%);
     }
 }
 

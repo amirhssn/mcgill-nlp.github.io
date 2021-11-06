@@ -1,69 +1,222 @@
-# faculty:
-#   - name: John Smith
-#     affiliation: Computer Science & Linguistics
-#     avatar: img/people/john.jpg
-#     url: https://john-smith.com (optional)
-#     research_areas: Area #1, Area #2, and Area #3 (optional)
-#     desc: some desc (optional)
-  
-#   - name
-#     ...
+profiles:
 
-# postdoc:
-#   - name: John Smith
-#     affiliation: Computer Science & Linguistics
-#     avatar: img/people/john.jpg
-#     url: https://john-smith.com (optional)
-#     research_areas: Area #1, Area #2, and Area #3 (optional)
-#     co_supervisor: John Smith 2 (optional)
-#     desc: some desc (optional)
-  
-#   - name
-#     ...
+- role: faculty
+  name: Siva Reddy
+  affiliation: Computer Science & Linguistics
+  avatar: img/people/siva-reddy.jpg
+  url: https://https://sivareddy.in
+  # research_areas: Area #1, Area #2, and Area #3 # optional
+  # desc: some desc # optional
+  active: true
 
-# phd:
-#   - name: John Smith
-#     affiliation: Computer Science & Linguistics
-#     avatar: img/people/john.jpg
-#     url: https://john-smith.com (optional)
-#     research_areas: Area #1, Area #2, and Area #3 (optional)
-#     co_supervisor: John Smith 2 (optional)
-#     desc: some desc (optional)
-  
-#   - name
-#     ...
+- role: postdoc
+  name: Edoardo Ponti
+  # affiliation: Computer Science & Linguistics
+  avatar: img/people/img.jpg
+  url: https://website.com # optional
+  # research_areas: Area #1, Area #2, and Area #3 # optional
+  desc: Oct 2020
+  enterance_year: 2020
+  active: true
 
-# msc:
-#   - name: John Smith
-#     affiliation: Computer Science & Linguistics
-#     avatar: img/people/john.jpg
-#     url: https://john-smith.com (optional)
-#     research_areas: Area #1, Area #2, and Area #3 (optional)
-#     co_supervisor: John Smith 2 (optional)
-#     desc: some desc (optional)
-  
-#   - name
-#     ...
+- role: phd
+  name: Zichao Li
+  # affiliation: Computer Science & Linguistics
+  avatar: img/people/img.jpg
+  url: https://website.com # optional
+  # research_areas: Area #1, Area #2, and Area #3 # optional
+  desc: Sep 2020
+  enterance_year: 2020
+  active: true
+
+- role: phd
+  name: Benno Krojer
+  # affiliation: Computer Science & Linguistics
+  avatar: img/people/img.jpg
+  url: https://website.com # optional
+  # research_areas: Area #1, Area #2, and Area #3 # optional
+  desc: Sep 2021
+  enterance_year: 2021
+  active: true
+
+- role: msc
+  name: Vaibhav Adlakha
+  # affiliation: Computer Science & Linguistics
+  avatar: img/people/img.jpg
+  url: https://website.com # optional
+  # research_areas: Area #1, Area #2, and Area #3 # optional
+  desc: Sep 2020
+  enterance_year: 2020
+  active: true
+
+- role: msc
+  name: Devang Kulshreshtha
+  # affiliation: Computer Science & Linguistics
+  avatar: img/people/img.jpg
+  url: https://website.com # optional
+  # research_areas: Area #1, Area #2, and Area #3 # optional
+  desc: Sep 2020
+  enterance_year: 2020
+  active: true
+
+- role: msc
+  name: Nicholas Meade
+  # affiliation: Computer Science & Linguistics
+  avatar: img/people/img.jpg
+  url: https://website.com # optional
+  # research_areas: Area #1, Area #2, and Area #3 # optional
+  desc: Sep 2020
+  enterance_year: 2020
+  active: true
+
+- role: msc
+  name: Nathan Schucher 
+  # affiliation: Computer Science & Linguistics
+  avatar: img/people/img.jpg
+  url: https://website.com # optional
+  # research_areas: Area #1, Area #2, and Area #3 # optional
+  desc: Sep 2020
+  enterance_year: 2020
+  active: true
+
+- role: msc
+  name: Amirhossein Kazemnejad
+  affiliation: Computer Science
+  avatar: img/people/amirhossein-kazemnejad.jpg
+  url: https://kazemnejad.com
+  research_areas: Systematic Generalization, Semantic Parsing, Representation Learning
+  desc: Jan 2021
+  enterance_year: 2021
+  active: true
+
+- role: msc
+  name: Parishad BehnamGhader
+  # affiliation: Computer Science & Linguistics
+  avatar: img/people/img.jpg
+  url: https://website.com # optional
+  # research_areas: Area #1, Area #2, and Area #3 # optional
+  desc: Sep 2021
+  enterance_year: 2021
+  active: true
+
+- role: msc
+  name: Xing Han Lu
+  # affiliation: Computer Science & Linguistics
+  avatar: img/people/img.jpg
+  url: https://website.com # optional
+  # research_areas: Area #1, Area #2, and Area #3 # optional
+  desc: Sep 2021
+  enterance_year: 2021
+  active: true
+
+- role: collaborator
+  name: Andreas Madsen
+  # affiliation: Computer Science & Linguistics
+  avatar: img/people/img.jpg
+  url: https://website.com # optional
+  # research_areas: Area #1, Area #2, and Area #3 # optional
+  desc: PhD at Polytechnique Montréal; co-advised with <a href="http://sarathchandar.in/">Sarath Chandar</a>
+  enterance_year: 2021
+  active: true
+
+- role: msc
+  name: Aristides Milios
+  # affiliation: Computer Science & Linguistics
+  avatar: img/people/img.jpg
+  url: https://website.com # optional
+  # research_areas: Area #1, Area #2, and Area #3 # optional
+  desc: Sep 2021
+  enterance_year: 2021
+  active: true
+
+- role: undergrad
+  name: Michelle Yang
+  # affiliation: Computer Science & Linguistics
+  avatar: img/people/img.jpg
+  # url: https://website.com # optional
+  # research_areas: Area #1, Area #2, and Area #3 # optional
+  desc: Fall 2021
+  enterance_year: 2021
+  active: true
+
+- role: undergrad
+  name: Sivan Milton
+  # affiliation: Computer Science & Linguistics
+  avatar: img/people/img.jpg
+  # url: https://website.com # optional
+  # research_areas: Area #1, Area #2, and Area #3 # optional
+  desc: Fall 2021
+  enterance_year: 2021
+  active: true
+
+- role: intern
+  name: Nouha Dziri 
+  # affiliation: Computer Science & Linguistics
+  avatar: img/people/img.jpg
+  url: https://website.com # optional
+  # research_areas: Area #1, Area #2, and Area #3 # optional
+  # desc: Fall 2021
+  enterance_year: 2021
+  active: true
 
 
-# undergrad:
-#   - name: John Smith
-#     affiliation: Computer Science & Linguistics
-#     avatar: img/people/john.jpg
-#     url: https://john-smith.com (optional)
-#     research_areas: Area #1, Area #2, and Area #3 (optional)
-#     co_supervisor: John Smith 2 (optional)
-#     desc: some desc (optional)
-  
-#   - name:
-#     ...
+- role: undergrad
+  name: Elinor Poole-Dayan 
+  # affiliation: Computer Science & Linguistics
+  avatar: img/people/img.jpg
+  url: https://www.linkedin.com/in/elinor-poole-dayan
+  # research_areas: Area #1, Area #2, and Area #3 # optional
+  desc: Winter 2021
+  enterance_year: 2020
+  active: false
+  leave_year: 2021
+  current_position: undergrad at McGill
 
-# alumni:
-#   - name: John Smith
-#     last_position: MSc
-#     leave_year: 2020
-#     current_position: Ph.D. at Mila (optional)
-#     url: https://john-smith.com (optional)
+- role: msc
+  name: Emily Goodwin 
+  # affiliation: Computer Science & Linguistics
+  # avatar: img/people/img.jpg
+  url: https://emilygoodwin.github.io/
+  # research_areas: Area #1, Area #2, and Area #3 # optional
+  desc: Jan 2020; co-advised with <a href="http://people.linguistics.mcgill.ca/~timothy.odonnell/">Tim O'Donnell</a>
+  # enterance_year: 2020
+  active: false
+  leave_year: 2021
+  current_position: Currently, PhD at Stanford Linguistics
 
-#   - name:
-#     ...
+- role: intern
+  name: Lucas Torroba Hennigen
+  # affiliation: Computer Science & Linguistics
+  # avatar: img/people/img.jpg
+  url: https://emilygoodwin.github.io/
+  # research_areas: Area #1, Area #2, and Area #3 # optional
+  # desc: Jan 2020; co-advised with <a href="http://people.linguistics.mcgill.ca/~timothy.odonnell/">Tim O'Donnell</a>
+  # enterance_year: 2020
+  active: false
+  leave_year: 2021
+  current_position: Currently, PhD at MIT Computer Science
+
+- role: intern
+  name: Victor Prokhorov
+  # affiliation: Computer Science & Linguistics
+  # avatar: img/people/img.jpg
+  url: https://emilygoodwin.github.io/
+  # research_areas: Area #1, Area #2, and Area #3 # optional
+  # desc: Jan 2020; co-advised with <a href="http://people.linguistics.mcgill.ca/~timothy.odonnell/">Tim O'Donnell</a>
+  # enterance_year: 2020
+  active: false
+  leave_year: 2020
+  current_position: Back to Cambridge University
+
+# Template
+# - role: intern # options: faculty, postdoc, phd, msc, undergrad, intern, collaborator
+#   name: Firstname Lastname
+#   avatar: img/people/img.jpg
+#   affiliation: Computer Science & Linguistics
+#   enterance_year: 2020
+#   active: true # options: ture, false . false: alumni, true: currently affiliated
+#   url: https://website.com/ # optional
+#   research_areas: Area 1, Area 2, and Area 3 # optional
+#   desc: Some description # optional
+#   leave_year: 2020 # optional
+#   current_position: Back to Cambridge University # optional. Only fill it if you're an alumni

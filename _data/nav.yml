@@ -8,11 +8,11 @@ items:
 - url: /publications/
   name: Publications
 
-- url: /projects/
-  name: Projects
+# - url: /projects/
+#   name: Projects
 
-- url: /resources/
-  name: Resources
+# - url: /resources/
+#   name: Resources
 
 - url: /contact/
   name: Contact
